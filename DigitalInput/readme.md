@@ -33,4 +33,4 @@ LD2 i.e LED2 will turn on when the button is pressed while LD3 will be turned of
 Complete code is at: ./Core/Src/main.c
 
 Output:
-<img src="../Assets/digitalinput.mp4">
+<img src="../Assets/digitalinput.mp4"></img>
