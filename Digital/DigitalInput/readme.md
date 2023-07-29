@@ -32,4 +32,8 @@ According to this, LD2 i.e. LED2 will turn on when the button is pressed while L
 Complete code is at: ./Core/Src/main.c
 
 Output:
-<img src="../Assets/Digital/digitalinput.mp4">
+
+
+https://github.com/Hemsagar11/STM32programs/assets/92944380/e70fda9e-04c9-4944-8040-9d15845a00f6
+
+
