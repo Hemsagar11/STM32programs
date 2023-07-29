@@ -34,4 +34,4 @@
 ```
 
 ### Output:
- - The on-board Red LED's brightness varies as time progresses.
+ - The on-board Red LED's brightness varies as time progresses(Not visible in video).
