@@ -1,7 +1,7 @@
 ## Sending Data from STM32 to mobile and receiving data from mobile to STM32
-- I have used the *HC-05 Bluetooth Module* for sending instruction from mobile to microcontroller.
+- I have used the *HC-05 Bluetooth Module* for sending instructions from mobile to microcontroller.
 - Download the **Serial Bluetooth Terminal** app for communicating with the *HC-05 module*.
-- More Information regarding the bluetooth module can be found [Here](https://techzeero.com/sensors-modules/bluetooth-module-hc-05/).
+- More Information regarding the Bluetooth module can be found [Here](https://techzeero.com/sensors-modules/bluetooth-module-hc-05/).
 
 **Board Used:** NUCLEO-F767ZI
 
@@ -10,7 +10,7 @@
 1. 5v from STM32 board to 5v pin in the module.
 2. GND to GND respectively
 3. Tx of the module goes to USART2_RX of the [Board](https://os.mbed.com/platforms/ST-Nucleo-F767ZI/).
-4. Rx of the module goes to USART2_TX of the board.
+4. The Rx of the module goes to USART2_TX of the board.
 
 **Note:** Any USART port can be used for this!
 
@@ -88,9 +88,9 @@ HAL_UART_Receive_IT(&huart2, &recv_char, 1); // Recieve via Interrupt function c
 ```
 
 ### Connecting using the app
-1. Open the Serial BLE Terminal app and go to the devices section in the side bar.
-[Image 1](../Assets/ble_1.jpg)
+1. Open the Serial BLE Terminal app and go to the devices section in the side bar.<br>
+<img src="../Assets/BLE/ble_1.jpg" width="225" height="300">
 2. Then select the name  of the device and wait for it to connect (check if the blueetoh in mobile is turned on).
-[Image 2](../Assets/ble_2.jpg)
+<img src="../Assets/BLE/ble_2.jpg" width="225" height="300">
 3. Once the terminal is open just type on or off to turn on/off the led respectively.
-[Image 3](../Assets/ble_3.jpeg)
+<img src="../Assets/BLE/ble_3.jpeg" width="225" height="300">
