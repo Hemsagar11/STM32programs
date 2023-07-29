@@ -17,20 +17,20 @@
 **_Note:_** It would be entirely possible to simply read the value of the temperature ADC channel in the main loop of the application, but this would block the processor from doing anything else. A much more elegant way is to use a timer + DMA to make the measurements run entirely in hardware and then just read out the values as and when they are needed.
 
 ### Procedure:
-- It is completely described in the reference manual of the board.
+- It is completely described in the reference manual of the board.<br>
 <img src="../../Assets/ADC_temp/RM_tempsensor.png" width="300" height="300"></img>
 - We should set the sampling time more than the minimum sampling time given in the manual.
-<img src="../../Assets/ADC_temp/datasheet_temp.png"></img>
+<img src="../../Assets/ADC_temp/datasheet_temp.png" width="300" height="300"></img>
 
 - Sampling time can be formulated as
-<img src="../../Assets/ADC_temp/sampling_temp.png">
+<img src="../../Assets/ADC_temp/sampling_temp.png" width="300" height="300">
 
 - Open up STM32cubeIDE and create a new project after selecting the board.
 - Configure USART3 to view the values in the serial monitor.
 - Clock Configuration:
     - In the Systemcore option in the pinout tab, set the RCC clock and set HSE as Crystal/Ceramic Resonator.
     - Now, in the clock configuration tab, select HSE and set the frequency of the APB2 peripheral clock as 30MHz.
-    [<img src="../../Assets/ADC_temp/clock config_tmp.png">](../../Assets/ADC_temp/clock%20config_tmp.png)
+    [<img src="../../Assets/ADC_temp/clock config_tmp.png" >](../../Assets/ADC_temp/clock%20config_tmp.png)
 
 - ADC Configuration:
     - I'm using ADC1 other ADCs can also be used. Set the ADC mode to the temperature sensor channel.
@@ -66,4 +66,4 @@ HAL_Delay(500);
 ```
 
 ### Output:
-<img src="../../Assets/ADC_temp/output_temp.png">
+<img src="../../Assets/ADC_temp/output_temp.png" width="300" height="300">
