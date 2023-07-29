@@ -19,11 +19,11 @@
 ### Procedure:
 - It is completely described in the reference manual of the board.<br>
 <img src="../../Assets/ADC_temp/RM_tempsensor.png" width="300" height="300"></img>
-- We should set the sampling time more than the minimum sampling time given in the manual.
+- We should set the sampling time more than the minimum sampling time given in the manual.<br>
 <img src="../../Assets/ADC_temp/datasheet_temp.png" width="300" height="300"></img>
 
 - Sampling time can be formulated as
-<img src="../../Assets/ADC_temp/sampling_temp.png" width="300" height="300">
+<img src="../../Assets/ADC_temp/sampling_temp.png" width="500" height="300">
 
 - Open up STM32cubeIDE and create a new project after selecting the board.
 - Configure USART3 to view the values in the serial monitor.
@@ -66,4 +66,4 @@ HAL_Delay(500);
 ```
 
 ### Output:
-<img src="../../Assets/ADC_temp/output_temp.png" width="300" height="300">
+<img src="../../Assets/ADC_temp/output_temp.png" width="450" height="300">
