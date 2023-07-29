@@ -18,7 +18,7 @@
 
 ### Procedure:
 - It is completely described in the reference manual of the board.
-<img src="../../Assets/ADC_temp/RM_tempsensor.png"></img>
+<img src="../../Assets/ADC_temp/RM_tempsensor.png" width="300" height="300"></img>
 - We should set the sampling time more than the minimum sampling time given in the manual.
 <img src="../../Assets/ADC_temp/datasheet_temp.png"></img>
 
@@ -30,7 +30,7 @@
 - Clock Configuration:
     - In the Systemcore option in the pinout tab, set the RCC clock and set HSE as Crystal/Ceramic Resonator.
     - Now, in the clock configuration tab, select HSE and set the frequency of the APB2 peripheral clock as 30MHz.
-    [<img src="../../Assets/clock config_tmp.png">](../../Assets/ADC_temp/clock%20config_tmp.png)
+    [<img src="../../Assets/ADC_temp/clock config_tmp.png">](../../Assets/ADC_temp/clock%20config_tmp.png)
 
 - ADC Configuration:
     - I'm using ADC1 other ADCs can also be used. Set the ADC mode to the temperature sensor channel.
