@@ -29,4 +29,4 @@ Note: Refer [HAL reference](https://web.eece.maine.edu/~hummels/classes/ece486/d
     - Achieved by Interrupts or DMA.
 
 ### Output:
-<img src="../../Assets/Digital/uart.png" width="300" height="250">
+<img src="../../Assets/Digital/uart.png" width="350" height="350">
