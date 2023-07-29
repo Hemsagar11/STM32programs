@@ -89,8 +89,8 @@ HAL_UART_Receive_IT(&huart2, &recv_char, 1); // Recieve via Interrupt function c
 
 ### Connecting using the app
 1. Open the Serial BLE Terminal app and go to the devices section in the sidebar.<br>
-<img src="../Assets/BLE/ble_1.jpg" width="225" height="300">
+<img src="../Assets/BLE/ble_1.jpg" width="400" height="500">
 2. Then select the name of the device and wait for it to connect (check if the Bluetooth in mobile is turned on).
-<img src="../Assets/BLE/ble_2.jpg" width="225" height="300">
+<img src="../Assets/BLE/ble_2.jpg" width="400" height="500">
 3. Once the terminal is open just type on or off to turn on/off the led respectively.
-<img src="../Assets/BLE/ble_3.jpeg" width="225" height="300">
+<img src="../Assets/BLE/ble_3.jpeg" width="400" height="500">
