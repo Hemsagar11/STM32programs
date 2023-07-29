@@ -79,8 +79,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     }
 }
 ```
-- This function is automatically called when the RX_buffer is complete after it recieves data from HC-05 module.
-- In the main Function I have called the Recieve function to recieve the data
+- This function is automatically called when the RX_buffer is complete after it receives data from the HC-05 module.
+- In the main Function, I have called the Recieve function to receive the data
 ```
 HAL_UART_Transmit(&huart2, demo_string, strlen(demo_string), HAL_MAX_DELAY); // It sends a demo string that has been defined beforehand.
 HAL_UART_Receive_IT(&huart2, &recv_char, 1); // Recieve via Interrupt function call.
@@ -88,9 +88,9 @@ HAL_UART_Receive_IT(&huart2, &recv_char, 1); // Recieve via Interrupt function c
 ```
 
 ### Connecting using the app
-1. Open the Serial BLE Terminal app and go to the devices section in the side bar.<br>
+1. Open the Serial BLE Terminal app and go to the devices section in the sidebar.<br>
 <img src="../Assets/BLE/ble_1.jpg" width="225" height="300">
-2. Then select the name  of the device and wait for it to connect (check if the blueetoh in mobile is turned on).
+2. Then select the name of the device and wait for it to connect (check if the Bluetooth in mobile is turned on).
 <img src="../Assets/BLE/ble_2.jpg" width="225" height="300">
 3. Once the terminal is open just type on or off to turn on/off the led respectively.
 <img src="../Assets/BLE/ble_3.jpeg" width="225" height="300">
