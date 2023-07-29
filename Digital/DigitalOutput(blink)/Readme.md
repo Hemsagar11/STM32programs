@@ -10,15 +10,20 @@
 3. Thes pins can also be seen in the UI in the IDE if "set default peripherals" was given a yes!.
 4. Generate the code and inside the while HAL_GPIO_Writepin() function is used to set the value to the GPIO output pin along with a certain amount of delay.
 ```
-    HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,GPIO_PIN_SET); // set the pin HIGH i.e. ON the LED 
+    	HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,GPIO_PIN_SET); // set the pin HIGH i.e. ON the LED 
 	HAL_Delay(500);
-	HAL_GPIO_WritePin(LD3_GPIO_Port,LD3_Pin,pin_status);
+	HAL_GPIO_WritePin(LED2_GPIO_Port,LED2_Pin,GPIO_PIN_RESET);
 	HAL_Delay(500); // set the pin LOW i.e. OFF the LED 
 ```
 - Alternatively, we can use HAL_GPIO_TogglePin() function to SET or RESET the GPIO pin.
 ```
-    HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_7);
+    	HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_7);
 	HAL_Delay(2000);
 ```
 
 ### Output:
+
+
+
+https://github.com/Hemsagar11/STM32programs/assets/92944380/a504cdbc-0316-48ad-8acc-91ec8144e499
+
