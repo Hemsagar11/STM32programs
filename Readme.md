@@ -1,5 +1,5 @@
 ## STM32 Programs!!
-*These were implemented while I was at Kalashalingam University, Srivilliputhur for an internship (2023)*
+*These were implemented while I was at Kalasalingam University, Srivilliputhur for an internship (2023)*
 
 **Duration: _12th July - 30th July_**
 
